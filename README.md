@@ -47,6 +47,36 @@ $ dotnet run
 
 ### 資料庫
 
-由於範例使用「北風貿易公司」的資料，請於程式執行前，先將 Northwind 資料，Restore 到 MS SQL Server 的資料庫之中。
+ - 本範例程式需要使用「北風貿易公司」資料庫，程式執行前，請先將 Northwind.bak 資料庫備份檔案，Restore 至 MS SQL Server 中。
 
+ - 本範例程式在 MS SQL Server 的 Connection String 設定如下：
+    ```
+    "data source=(local);initial catalog=Northwind;integrated security=True"
+    ```
+
+    若有需要變更，請至 /Models/NorthwindContext.cs 原始碼程式檔，進行修改。
+
+    Connection String 所在位置，如下所示：
+
+    ```
+    protected override void OnConfiguring(DbContextOptionsBuilder options) {
+        ......
+    }    
+    ```
+### 常見 SQL Connection String 用法
+
+#### 使用 SQL Server Express 版，伺服器身份驗證方式(Server Authentication)採用「Windows Authentication」
+"data source=.\SQLEXPRESS;initial catalog=Northwind;integrated security=True"
+
+#### 使用 SQL Server Express 版，伺服器身份驗證方式(Server Authentication)採用「Windows Authentication」
+"data source=localhost;initial catalog=Northwind;integrated security=True"
+
+#### 使用 SQL Server Express 版，伺服器身份驗證方式(Server Authentication)採用「Windows Authentication」
+"data source=127.0.0.1;initial catalog=Northwind;integrated security=True"
+
+#### 使用 SQL Server Express 版，伺服器身份驗證方式(Server Authentication)採用「Windows Authentication」
+"data source=(local);initial catalog=Northwind;integrated security=True"
+
+#### 使用 SQL Server (含 Developer ) 版，伺服器身份驗證方式(Server Authentication)採用「SQL Server」
+"data source=192.168.66.10;initial catalog=Northwind;user id=sa;password=Passw0rd"
 

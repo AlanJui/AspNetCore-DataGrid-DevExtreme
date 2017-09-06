@@ -5,7 +5,9 @@ namespace Sample.Models {
         protected override void OnConfiguring(DbContextOptionsBuilder options) {
             options.UseSqlServer(
                 // @"data source=.\SQLEXPRESS;initial catalog=Northwind;integrated security=True",
-                @"data source=127.0.0.1;initial catalog=Northwind;integrated security=True",
+                // @"data source=127.0.0.1;initial catalog=Northwind;integrated security=True",
+                // @"data source=(local);initial catalog=Northwind;integrated security=True",
+                @"data source=192.168.66.10;initial catalog=Northwind;user id=sa;password=Passw0rd",
                 sqlOptions => sqlOptions.UseRowNumberForPaging()
             );
         }
