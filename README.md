@@ -68,13 +68,13 @@ $ dotnet run
 #### 使用 SQL Server Express 版，伺服器身份驗證方式(Server Authentication)採用「Windows Authentication」
 "data source=.\SQLEXPRESS;initial catalog=Northwind;integrated security=True"
 
-#### 使用 SQL Server Express 版，伺服器身份驗證方式(Server Authentication)採用「Windows Authentication」
+#### 使用 SQL Server (含 Developer ) 版，伺服器身份驗證方式(Server Authentication)採用「Windows Authentication」
 "data source=localhost;initial catalog=Northwind;integrated security=True"
 
-#### 使用 SQL Server Express 版，伺服器身份驗證方式(Server Authentication)採用「Windows Authentication」
+#### 使用 SQL Server (含 Developer ) 版，伺服器身份驗證方式(Server Authentication)採用「Windows Authentication」
 "data source=127.0.0.1;initial catalog=Northwind;integrated security=True"
 
-#### 使用 SQL Server Express 版，伺服器身份驗證方式(Server Authentication)採用「Windows Authentication」
+#### 使用 SQL Server (含 Developer ) 版，伺服器身份驗證方式(Server Authentication)採用「Windows Authentication」
 "data source=(local);initial catalog=Northwind;integrated security=True"
 
 #### 使用 SQL Server (含 Developer ) 版，伺服器身份驗證方式(Server Authentication)採用「SQL Server」
